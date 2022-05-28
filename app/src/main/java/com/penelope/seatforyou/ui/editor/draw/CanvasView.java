@@ -1,13 +1,17 @@
 package com.penelope.seatforyou.ui.editor.draw;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PointF;
 import android.graphics.Region;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 import com.penelope.seatforyou.R;
 import com.penelope.seatforyou.data.editor.assets.Circle;
@@ -36,6 +40,9 @@ public class CanvasView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
+        this.canvas = canvas;
+        if (Figure.getClip() == null) Figure.setClip(new Region(0, 0, getWidth(), getHeight()));
+
         // 모든 도형을 살펴봐서
         for (Figure figure : figureList) {
             Path path = figure.getPath();
@@ -48,21 +55,21 @@ public class CanvasView extends View {
     // 뷰 초기 세팅
     private void init() {
         setId(View.generateViewId());
-        Figure.setClip(new Region(0, 0, getWidth(), getHeight()));
+
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-//                // 기존 생성물을 터치한건지 확인
-//                for (int i = 0; i < figureList.size(); i++) {
-//                    Region r = figureList.get(i).getRegion();
-//                    if (r.contains((int) event.getX(), (int) event.getY())) {
-//                        Toast.makeText(getContext(), "도형 터치 감지", Toast.LENGTH_SHORT).show();
-//                        return super.onTouchEvent(event);
-//                    }
-//                }
+                // 기존 생성물을 터치한건지 확인
+                for (int i = 0; i < figureList.size(); i++) {
+                    Region r = figureList.get(i).getRegion();
+                    if (r.contains((int) event.getX(), (int) event.getY())) {
+                        Toast.makeText(getContext(), "도형 터치 감지", Toast.LENGTH_SHORT).show();
+                        return super.onTouchEvent(event);
+                    }
+                }
                 // 아니라면 새로 생성
                 createFigure(event.getX(), event.getY());
                 break;
@@ -105,9 +112,9 @@ public class CanvasView extends View {
         this.invalidate();
     }
 
-    public int getTotalArea(){
+    public int getTotalArea() {
         float totalArea = 0;
-        for(Figure f : figureList){
+        for (Figure f : figureList) {
             totalArea += f.getArea();
         }
         return (int) totalArea;
