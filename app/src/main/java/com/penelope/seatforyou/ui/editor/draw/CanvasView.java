@@ -1,7 +1,5 @@
 package com.penelope.seatforyou.ui.editor.draw;
 
-import static java.lang.Math.abs;
-
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -52,52 +50,29 @@ public class CanvasView extends View {
         setId(View.generateViewId());
         Figure.setClip(new Region(0, 0, getWidth(), getHeight()));
     }
-    private double touch_interval_X = 0; // X 터치 간격
-    private double touch_interval_Y = 0; // Y 터치 간격
-    private int zoom_in_count = 0; // 줌 인 카운트
-    private int zoom_out_count = 0; // 줌 아웃 카운트
-    private int touch_zoom = 0; // 줌 크기
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        switch (event.getAction() & MotionEvent.ACTION_MASK) {
-            case MotionEvent.ACTION_DOWN: // 싱글터치
+        switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+//                // 기존 생성물을 터치한건지 확인
+//                for (int i = 0; i < figureList.size(); i++) {
+//                    Region r = figureList.get(i).getRegion();
+//                    if (r.contains((int) event.getX(), (int) event.getY())) {
+//                        Toast.makeText(getContext(), "도형 터치 감지", Toast.LENGTH_SHORT).show();
+//                        return super.onTouchEvent(event);
+//                    }
+//                }
+                // 아니라면 새로 생성
                 createFigure(event.getX(), event.getY());
                 break;
-            case MotionEvent.ACTION_MOVE: // 터치 후 이동 시
+            case MotionEvent.ACTION_MOVE:
                 float x = event.getX();
                 float y = event.getY();
-                if(event.getPointerCount() == 2) {
-                    double now_interval_X = (double) abs(event.getX(0) - event.getX(1)); // 두 손가락 X좌표 차이 절대값
-                    double now_interval_Y = (double) abs(event.getY(0) - event.getY(1)); // 두 손가락 Y좌표 차이 절대값
-                    if (touch_interval_X < now_interval_X && touch_interval_Y < now_interval_Y) {
-                        // 이전 값과 비교, 확대기능에 대한 코드 정의 TODO: 김태환
-                        zoom_in_count++;
-                        if (zoom_in_count > 5) {
-                            // 카운트를 세는 이유 : 너무 많은 호출을 줄이기 위해
-                            zoom_in_count = 0;
-                            touch_zoom += 5;
-                        }
-                    }
-                    if (touch_interval_X > now_interval_X && touch_interval_Y > now_interval_Y) {
-                        // 축소 기능에 대한 코드 정의
-                        zoom_out_count++;
-                        if (zoom_out_count > 5) {
-                            zoom_out_count = 0;
-
-                            touch_zoom -= 10;
-                            // TODO: 김태환
-                        }
-                    }
-                    touch_interval_X = (double) abs(event.getX(0) - event.getX(1));
-                    touch_interval_Y = (double) abs(event.getY(0) - event.getY(1));
-
-                }
                 break;
         }
         return super.onTouchEvent(event);
     }
-
 
     /**
      * 터치한 위치에 도형을 추가해주는 함수
