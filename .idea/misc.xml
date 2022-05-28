@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/drawable-v24/category_background.xml" value="0.1" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/drawable-v24/rectangle.xml" value="0.2205" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/drawable/edit_background.xml" value="0.196" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/drawable/rectangle.xml" value="0.198" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/drawable/vertical_gradient.xml" value="0.1825" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/activity_auth.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/activity_home.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/activity_main2.xml" value="0.33541666666666664" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/activity_manager.xml" value="0.25" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/address_item.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/button_item.xml" value="0.25555555555555554" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/card_item.xml" value="0.22" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/card_vertical_item.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/check_item.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/dialog_category.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/dialog_phone.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/dialog_price.xml" value="0.33" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/dialog_region.xml" value="0.22037037037037038" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_add_edit_reservation.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_add_review.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_address.xml" value="0.33" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_calendar.xml" value="0.25" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_category.xml" value="0.25" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_date_time.xml" value="0.21851851851851853" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_detail.xml" value="0.3289070480081716" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_filtered.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_find_password.xml" value="0.25" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_inquire_register.xml" value="0.33" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_login.xml" value="0.25" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_manager.xml" value="0.15" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_menu.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_menu_list.xml" value="0.26851851851851855" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_open_close.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_overview.xml" value="0.33" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_pick_category.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_picture.xml" value="0.26851851851851855" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_register.xml" value="0.25" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_reservation.xml" value="0.33" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_reserve.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_review.xml" value="0.26851851851851855" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_search.xml" value="0.33" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_set_date_time.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_set_filter.xml" value="0.33" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_shop.xml" value="0.33" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_welcome.xml" value="0.1" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/fragment_zzim.xml" value="0.33" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/menu_item.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/reservation_item.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/review_item.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/layout/shop_item.xml" value="0.3359375" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/menu/menu_bottom_nav.xml" value="0.22" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/menu/menu_bottom_nav_member.xml" value="0.18796296296296297" />
+        <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/menu/menu_bottom_nav_not_member.xml" value="0.33541666666666664" />
+        <entry key="..\:/Users/kal02/AndroidStudioProjects/SeatForYou/app/src/main/res/drawable/border_sidetab.xml" value="0.1" />
+        <entry key="..\:/Users/kal02/AndroidStudioProjects/SeatForYou/app/src/main/res/drawable/ic_delete.xml" value="0.255" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
