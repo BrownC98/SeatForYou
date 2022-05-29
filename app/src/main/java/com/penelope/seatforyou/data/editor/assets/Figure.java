@@ -30,6 +30,9 @@ public abstract class Figure {
     }
 
     public void setSpawnPoint(PointF spawnPoint) {
+        float dx = spawnPoint.x - this.spawnPoint.x;
+        float dy = spawnPoint.y - this.spawnPoint.y;
+        path.offset(dx, dy);
         this.spawnPoint = spawnPoint;
     }
 

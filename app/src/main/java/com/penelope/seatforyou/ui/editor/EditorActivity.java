@@ -254,6 +254,8 @@ public class EditorActivity extends AppCompatActivity {
     }
 
     private void undo() {
+        project.getCurrentLevel().getCanvasView().figureList.clear();
+        project.getCurrentLevel().getCanvasView().invalidate();
     }
 
     private void redo() {

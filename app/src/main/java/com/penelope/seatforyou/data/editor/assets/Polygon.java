@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class Polygon extends Figure{
 
-    private List<PointF> points = new ArrayList<>();
+    protected List<PointF> points = new ArrayList<>();
     protected double rotationAngle = 0;
 
     public Polygon(PointF spawnPoint) {
@@ -58,6 +58,16 @@ public class Polygon extends Figure{
         setPath(path);
     }
 
+    @Override
+    public void setSpawnPoint(PointF spawnPoint) {
+        float dx = spawnPoint.x - this.spawnPoint.x;
+        float dy = spawnPoint.y - this.spawnPoint.y;
 
+        for (PointF p : points){
+            p.x += dx;
+            p.y += dy;
+        }
 
+        super.setSpawnPoint(spawnPoint);
+    }
 }

@@ -9,7 +9,6 @@ public class Squre extends Polygon {
 
     public Squre(PointF spawnPoint, float width, float height) {
         super(spawnPoint);
-        List<PointF> points = new ArrayList<>();
         float halfX = width / 2;
         float halfY = height / 2;
 
