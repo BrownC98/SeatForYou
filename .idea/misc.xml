@@ -60,8 +60,15 @@
         <entry key="..\:/Users/cool/AndroidStudioProjects/SeatForYou/app/src/main/res/menu/menu_bottom_nav_not_member.xml" value="0.33541666666666664" />
         <entry key="..\:/Users/kal02/AndroidStudioProjects/SeatForYou/app/src/main/res/drawable/border_sidetab.xml" value="0.1" />
         <entry key="..\:/Users/kal02/AndroidStudioProjects/SeatForYou/app/src/main/res/drawable/ic_delete.xml" value="0.255" />
+        <entry key="app/src/main/res/drawable/activity_splash.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/border_sidetab.xml" value="0.2085" />
+        <entry key="app/src/main/res/drawable/ic_people.xml" value="0.164" />
+        <entry key="app/src/main/res/drawable/ic_watch.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/rectangle.xml" value="0.164" />
+        <entry key="app/src/main/res/drawable/splash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_debugmain.xml" value="0.19791666666666666" />
         <entry key="app/src/main/res/layout/activity_editor.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.19791666666666666" />
       </map>
     </option>
   </component>
