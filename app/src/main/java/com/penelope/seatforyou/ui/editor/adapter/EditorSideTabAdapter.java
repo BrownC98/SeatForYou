@@ -28,7 +28,6 @@ public class EditorSideTabAdapter extends RecyclerView.Adapter<EditorSideTabAdap
             super(view);
             textView = (TextView) view.findViewById(R.id.tv_sidetab_element);
             imageView = (ImageView) view.findViewById(R.id.iv_sidetab_element);
-
         }
 
         public void setData(SideTabData data) {

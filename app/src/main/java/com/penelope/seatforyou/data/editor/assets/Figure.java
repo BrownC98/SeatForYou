@@ -11,11 +11,31 @@ import android.graphics.Region;
  */
 public abstract class Figure {
 
+    private static Region clip;
     public PointF spawnPoint;
     private Paint paint = new Paint();
     private Path path = new Path();
     private Region region = new Region();
-    private static Region clip;
+    private boolean selectMode = false; // 도형의 선택모드 상태를 나타냄
+
+    public boolean isSelectMode() {
+        return selectMode;
+    }
+
+    public void setSelectMode(boolean selectMode) {
+        this.selectMode = selectMode;
+    }
+
+
+    public int getFigureId() {
+        return figureId;
+    }
+
+    public void setFigureId(int figureId) {
+        this.figureId = figureId;
+    }
+
+    private int figureId;
 
     public Figure(PointF spawnPoint) {
         this.spawnPoint = spawnPoint;
@@ -33,6 +53,7 @@ public abstract class Figure {
         float dx = spawnPoint.x - this.spawnPoint.x;
         float dy = spawnPoint.y - this.spawnPoint.y;
         path.offset(dx, dy);
+        region.translate((int)dx, (int)dy);
         this.spawnPoint = spawnPoint;
     }
 
@@ -50,7 +71,6 @@ public abstract class Figure {
 
     public void setPath(Path path) {
         this.path = path;
-
         region.setPath(path, clip);
     }
 

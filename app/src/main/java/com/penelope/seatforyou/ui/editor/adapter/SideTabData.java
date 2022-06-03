@@ -8,6 +8,16 @@ public class SideTabData {
     String text;    // 이미지 이름
     boolean selected = false;
 
+    public boolean isFloor() {
+        return isFloor;
+    }
+
+    public void setFloor(boolean floor) {
+        isFloor = floor;
+    }
+
+    boolean isFloor = false;
+
     public SideTabData(int imageId, String text) {
         this.imageId = imageId;
         this.text = text;

@@ -29,15 +29,17 @@ public class Polygon extends Figure{
 
     public float getArea(){
         float total = 0;
-        for (int i = 0; i < points.size(); i++) {
-            float addX = points.get(i).x;
-            float addY = points.get(i == points.size() - 1 ? 0 : i + 1).y;
-            float subX = points.get(i == points.size() - 1 ? 0 : i + 1).x;
-            float subY = points.get(i).y;
-            total += (addX * addY * 0.5);
-            total -= (subX * subY * 0.5);
-        }
-        return Math.abs(total);
+        if(points.size() >= 3){
+            for (int i = 0; i < points.size(); i++) {
+                float addX = points.get(i).x;
+                float addY = points.get(i == points.size() - 1 ? 0 : i + 1).y;
+                float subX = points.get(i == points.size() - 1 ? 0 : i + 1).x;
+                float subY = points.get(i).y;
+                total += (addX * addY * 0.5);
+                total -= (subX * subY * 0.5);
+            }
+            return Math.abs(total);
+        }else return 0;
     }
 
     public List<PointF> getPoints() {
